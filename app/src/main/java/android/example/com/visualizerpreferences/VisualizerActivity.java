@@ -120,16 +120,16 @@ public class VisualizerActivity extends AppCompatActivity {
         }
     }
 
-    // TODO (1) Create a new Empty Activity named SettingsActivity; make sure to generate the
+    // T06.01 COMPLETED (1) Create a new Empty Activity named SettingsActivity; make sure to generate the
     // activity_settings.xml layout file as well and add the activity to the manifest
 
-    // TODO (2) Add a new resource folder called menu and create visualizer_menu.xml
-    // TODO (3) In visualizer_menu.xml create a menu item with a single item. The id should be
+    // T06.01 COMPLETED (2) Add a new resource folder called menu and create visualizer_menu.xml
+    // T06.01 COMPLETED (3) In visualizer_menu.xml create a menu item with a single item. The id should be
     // "action_settings", title should be saved in strings.xml, the item should never
     // be shown as an action, and orderInCategory should be 100
 
-    // TODO (5) Add the menu to the menu bar
-    // TODO (6) When the "Settings" menu item is pressed, open SettingsActivity
+    // T06.01 COMPLETED (5) Add the menu to the menu bar
+    // T06.01 COMPLETED (6) When the "Settings" menu item is pressed, open SettingsActivity
 
 
     @Override
@@ -141,7 +141,6 @@ public class VisualizerActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
         int id = item.getItemId();
         if (id == R.id.action_settings){
             Intent startSettingsActivity = new Intent(this, SettingsActivity.class);
