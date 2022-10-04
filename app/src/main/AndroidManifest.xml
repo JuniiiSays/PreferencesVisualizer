@@ -15,7 +15,13 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".SettingsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/action_settings"
+            android:parentActivityName=".VisualizerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VisualizerActivity"/>
+        </activity>
         <activity
             android:name=".VisualizerActivity"
             android:exported="true">
